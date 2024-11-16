@@ -9,15 +9,14 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-
-Client.py
-import socket 
-s=socket.socket() 
-s.connect(('localhost',8000)) 
-while True: 
-    msg=input("Client > ") 
-    s.send(msg.encode()) 
-    print("Server > ",s.recv(1024).decode())
+      Client.py
+      import socket 
+      s=socket.socket() 
+      s.connect(('localhost',8000)) 
+      while True: 
+      msg=input("Client > ") 
+      s.send(msg.encode()) 
+      print("Server > ",s.recv(1024).decode())
 
     Server.py
 import socket 
